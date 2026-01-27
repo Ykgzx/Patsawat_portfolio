@@ -1,42 +1,142 @@
-<div>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-            Short Introduction
-        </h1>
-        <p>
-            My name is [Your Name], a second/third-year undergraduate student with a strong interest in front-end development and modern web technologies.
-        </p>
+<div class="min-h-screen bg-gradient-to-b from-slate-950 via-indigo-950 to-slate-950 text-white py-20 px-5 sm:px-6 lg:px-8">
+  <!-- Hero Section -->
+  <div class="max-w-4xl mx-auto text-center mb-20">
+    <div class="relative inline-block mb-10 group">
+      <div class="w-40 h-40 rounded-full bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-1.5 shadow-2xl shadow-purple-900/50 transition-all duration-500 group-hover:scale-105">
+        <div class="w-full h-full rounded-full bg-slate-900/90 backdrop-blur-md flex items-center justify-center border border-slate-700/60">
+          <img src="/linep.jpg" class="w-full h-full rounded-full" alt="">
+        </div>
+      </div> 
+      <div class="absolute -bottom-3 -right-3 w-14 h-14 bg-emerald-500 rounded-full border-4 border-slate-950 shadow-lg shadow-emerald-900/50 animate-pulse"></div>
     </div>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-            Core Skills
-        </h1>
-        <p>
-            I focus mainly on Front-end Development, with experience using React and Next.js to build responsive web applications. I am familiar with API integration, basic authentication, and creating user-friendly interfaces.
+
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent mb-5">
+      Patsawat Rodmanee
+    </h1>
+    <p class="text-xl sm:text-2xl font-medium text-slate-200 mb-6 tracking-wide">
+      Front-end Developer • Building modern, responsive web experiences
+    </p>
+    <p class="text-slate-400 max-w-2xl mx-auto leading-relaxed text-lg">
+      Second/Third-year undergraduate student passionate about React, Next.js, clean UI/UX, and turning ideas into pixel-perfect interfaces.
+    </p>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:gap-10">
+    <!-- Introduction Card -->
+    <div class="group relative bg-slate-900/40 backdrop-blur-xl rounded-3xl p-8 border border-slate-800/60 hover:border-indigo-600/60 transition-all duration-400 hover:shadow-2xl hover:shadow-indigo-900/25 hover:-translate-y-2">
+      <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/8 to-purple-600/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center text-3xl shadow-lg shadow-indigo-900/40">
+            👋
+          </div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">About Me</h2>
+        </div>
+        <p class="text-slate-300 leading-relaxed">
+          Hi, I'm <span class="text-indigo-400 font-semibold">Patsawat Rodmanee</span>.<br>
+          A second/third-year student deeply passionate about front-end development and modern web technologies.
         </p>
+      </div>
     </div>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-            Areas of Interest
-        </h1>
-        <p>
-            I am particularly interested in front-end and web development, with a focus on building responsive and user-friendly web applications. I enjoy developing interfaces for e-commerce platforms and content-based websites, and continuously improving my skills in modern JavaScript frameworks, component-based development, and UI/UX best practices.
+
+    <!-- Core Skills Card -->
+    <div class="group relative bg-slate-900/40 backdrop-blur-xl rounded-3xl p-8 border border-slate-800/60 hover:border-cyan-600/60 transition-all duration-400 hover:shadow-2xl hover:shadow-cyan-900/25 hover:-translate-y-2">
+      <div class="absolute inset-0 bg-gradient-to-br from-cyan-600/8 to-blue-600/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center text-3xl shadow-lg shadow-cyan-900/40">
+            🛠️
+          </div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">Core Skills</h2>
+        </div>
+        <p class="text-slate-300 leading-relaxed mb-6">
+          Focused on front-end development with hands-on experience building responsive applications using React and Next.js.
         </p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-1.5 bg-blue-950/70 text-blue-300 rounded-full text-sm font-medium border border-blue-800/50">Next.js</span>
+          <span class="px-4 py-1.5 bg-pink-950/70 text-pink-300 rounded-full text-sm font-medium border border-pink-800/50">Responsive Design</span>
+          <span class="px-4 py-1.5 bg-indigo-950/70 text-indigo-300 rounded-full text-sm font-medium border border-indigo-800/50">Tailwind CSS</span>
+        </div>
+      </div>
     </div>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-            Career Goal
-        </h1>
-        <p>
-            I am currently seeking a front-end developer internship to gain hands-on experience in a professional environment, apply what I have learned, and further develop my skills for my future career in software development.
+
+    <!-- Areas of Interest Card -->
+    <div class="group relative bg-slate-900/40 backdrop-blur-xl rounded-3xl p-8 border border-slate-800/60 hover:border-emerald-600/60 transition-all duration-400 hover:shadow-2xl hover:shadow-emerald-900/25 hover:-translate-y-2">
+      <div class="absolute inset-0 bg-gradient-to-br from-emerald-600/8 to-teal-600/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-3xl shadow-lg shadow-emerald-900/40">
+            💡
+          </div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">Areas of Interest</h2>
+        </div>
+        <p class="text-slate-300 leading-relaxed">
+          Passionate about creating intuitive, beautiful, and responsive web interfaces — especially e-commerce platforms, landing pages, content-driven sites, and admin dashboards.
         </p>
+      </div>
     </div>
-    <div>
-        <h1 class="text-3xl font-bold underline">
-            Working Style / Personality
-        </h1>
-        <p>
-            I am a self-motivated learner who enjoys solving problems, learning independently, and working collaboratively in a team. I am open to feedback and always eager to improve myself.
+
+    <!-- Career Goal Card -->
+    <div class="group relative bg-slate-900/40 backdrop-blur-xl rounded-3xl p-8 border border-slate-800/60 hover:border-amber-600/60 transition-all duration-400 hover:shadow-2xl hover:shadow-amber-900/25 hover:-translate-y-2">
+      <div class="absolute inset-0 bg-gradient-to-br from-amber-600/8 to-orange-600/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-6">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-600 to-orange-600 flex items-center justify-center text-3xl shadow-lg shadow-amber-900/40">
+            🎯
+          </div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">Career Goal</h2>
+        </div>
+        <p class="text-slate-300 leading-relaxed">
+          Actively seeking a front-end developer internship to gain real-world experience, apply academic knowledge in a professional setting, and level up my skills.
         </p>
+      </div>
     </div>
+
+    <!-- Working Style / Personality - Full width -->
+    <div class="group relative bg-slate-900/40 backdrop-blur-xl rounded-3xl p-9 border border-slate-800/60 hover:border-violet-600/60 transition-all duration-400 hover:shadow-2xl hover:shadow-violet-900/25 hover:-translate-y-2 md:col-span-2">
+      <div class="absolute inset-0 bg-gradient-to-br from-violet-600/8 to-fuchsia-600/8 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div class="relative z-10">
+        <div class="flex items-center gap-4 mb-7">
+          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-violet-600 to-fuchsia-600 flex items-center justify-center text-3xl shadow-lg shadow-violet-900/40">
+            🤝
+          </div>
+          <h2 class="text-2xl font-bold text-white tracking-tight">Working Style</h2>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-6 mb-8">
+          <div class="flex items-center gap-4 p-5 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+            <span class="text-3xl">📚</span>
+            <span class="text-slate-200 font-medium">Self-motivated Learner</span>
+          </div>
+          <div class="flex items-center gap-4 p-5 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+            <span class="text-3xl">🧩</span>
+            <span class="text-slate-200 font-medium">Problem Solver</span>
+          </div>
+          <div class="flex items-center gap-4 p-5 bg-slate-800/50 rounded-2xl border border-slate-700/50">
+            <span class="text-3xl">👥</span>
+            <span class="text-slate-200 font-medium">Team Collaborator</span>
+          </div>
+        </div>
+
+        <p class="text-slate-400 text-center text-lg italic tracking-wide">
+          “Always open to feedback and committed to continuous self-improvement.”
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact CTA -->
+  <div class="max-w-4xl mx-auto mt-24 text-center">
+    <p class="text-slate-300 text-xl mb-8 font-light tracking-wide">
+      Interested in collaborating or just want to chat?
+    </p>
+    <a href="mailto:your.email@example.com"
+       class="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-lg rounded-full shadow-2xl shadow-purple-900/50 hover:shadow-purple-700/60 transition-all duration-400 hover:-translate-y-1 hover:scale-[1.03] active:scale-95">
+      <span>Get in Touch</span>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+      </svg>
+    </a>
+  </div>
 </div>

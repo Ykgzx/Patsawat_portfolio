@@ -1,8 +1,65 @@
-<div class="h-screen flex flex-col items-center">
-    <h1 class="text-3xl font-bold underline pt-16 md:pt-16">Welcome to My Portfolio Project!</h1>
-    <div>
-        <p class="mt-4 text-center">
-            This is the home page of my portfolio project. Explore the sidebar to learn more about me and my work.
-        </p>
+<div class="min-h-screen bg-gradient-to-b from-gray-950 via-indigo-950 to-purple-950 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+  <!-- Main Content Container -->
+  <div class="max-w-4xl w-full text-center">
+    <!-- Animated Greeting / Title -->
+    <div class="relative mb-10 md:mb-12">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent tracking-tight drop-shadow-2xl animate-pulse-slow">
+        Welcome to My Portfolio
+      </h1>
+      <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-600 rounded-full shadow-lg shadow-purple-900/50"></div>
     </div>
+
+    <!-- Subtitle / Intro -->
+    <p class="text-lg sm:text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto leading-relaxed mb-12">
+      สวัสดีครับ! ผม <span class="text-indigo-400 font-semibold">Patsawat</span><br>
+      นักพัฒนา Front-End ที่หลงใหลในการสร้างเว็บสวย ๆ และ responsive ด้วยเทคโนโลยีสมัยใหม่
+    </p>
+
+    <!-- Quick Action Buttons / Call to Action -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
+      <a href="/about" 
+         class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-lg rounded-full shadow-xl shadow-purple-900/40 hover:shadow-purple-700/60 transition-all duration-400 hover:-translate-y-1 hover:scale-105 active:scale-95">
+        <span>รู้จักผมเพิ่มเติม</span>
+        <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <a href="/project" 
+         class="inline-flex items-center px-8 py-4 bg-slate-800/60 backdrop-blur-sm border border-slate-700 text-slate-200 font-semibold text-lg rounded-full hover:bg-slate-700/80 hover:border-indigo-500/50 transition-all duration-400 hover:-translate-y-1 hover:shadow-lg hover:shadow-indigo-900/30">
+        ดูผลงานของผม
+      </a>
+    </div>
+
+    <!-- Optional: Floating tech icons or subtle animation elements -->
+    <div class="relative mt-8 opacity-60">
+      <div class="absolute top-0 left-10 w-16 h-16 rounded-full bg-indigo-500/20 blur-xl animate-float-slow"></div>
+      <div class="absolute bottom-0 right-10 w-20 h-20 rounded-full bg-purple-500/20 blur-xl animate-float-slow delay-1000"></div>
+      <div class="absolute top-1/2 left-1/3 w-12 h-12 rounded-full bg-pink-500/20 blur-xl animate-float-slow delay-2000"></div>
+    </div>
+  </div>
+
+  <!-- Footer hint (optional) -->
+  <div class="absolute bottom-8 text-slate-500 text-sm">
+    Explore the sidebar → About • Skills • Projects • Tools • Contact
+  </div>
 </div>
+
+<style>
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+  .animate-float-slow {
+    animation: float-slow 12s infinite ease-in-out;
+  }
+  .delay-1000 { animation-delay: 1s; }
+  .delay-2000 { animation-delay: 2s; }
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.85; }
+  }
+</style>
